@@ -4,5 +4,5 @@ data class Bulb(
         var name:String,
         var isSelected:Boolean,
         var urlImage: Int,
-        var RGB: Int
+        var RGB: List<Int>
 )

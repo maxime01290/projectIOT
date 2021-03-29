@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "488121904998",
+    "firebase_url": "https://iot-ambianceleds-default-rtdb.firebaseio.com",
+    "project_id": "iot-ambianceleds",
+    "storage_bucket": "iot-ambianceleds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488121904998:android:834629747f85b7de32e2a7",
+        "android_client_info": {
+          "package_name": "com.example.projectiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488121904998-a29gt1a452t5t76h8rtc64blcie2r1h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoQtqP3AXd5xzAZP6fWJk6BCi8NDkBsbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488121904998-a29gt1a452t5t76h8rtc64blcie2r1h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
