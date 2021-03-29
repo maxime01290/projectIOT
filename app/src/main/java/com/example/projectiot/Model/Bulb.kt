@@ -1,7 +1,8 @@
 package com.example.projectiot.Model
 
-data class Bulb (
+data class Bulb(
         var name:String,
         var isSelected:Boolean,
-        var urlImage: Int
- )
+        var urlImage: Int,
+        var RGB: Int
+)

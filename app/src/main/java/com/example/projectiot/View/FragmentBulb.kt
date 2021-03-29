@@ -1,10 +1,11 @@
 package com.example.projectiot.View
 
+import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projectiot.Adapter.AdapterBulb
 import com.example.projectiot.Model.Bulb
@@ -23,8 +24,8 @@ class FragmentBulb : Fragment(), AdapterBulb.onItemClickListenerCustom {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val netflix = Bulb("netflix",true,R.drawable.netflix)
-        val twitch = Bulb("twitch",false,R.drawable.twitch)
+        val netflix = Bulb("netflix",true,R.drawable.netflix, Color.RED)
+        val twitch = Bulb("twitch",false,R.drawable.twitch, Color.rgb(255,0,255))
 
         val bulbList: ArrayList<Bulb> = ArrayList()
 

@@ -10,6 +10,7 @@ import androidx.cardview.widget.CardView
 import com.example.projectiot.R
 
 class FragmentMusic : Fragment() {
+    var frequency:Int = -1
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
@@ -21,8 +22,9 @@ class FragmentMusic : Fragment() {
 
         val textViewUpdateFrequency: TextView = view.findViewById(R.id.textView_update_frequencies)
         val cardViewButton: CardView = view.findViewById(R.id.cardView_button_frequencies)
+        frequency = 0
         cardViewButton.setOnClickListener {
-            textViewUpdateFrequency.setText("test")
+            textViewUpdateFrequency.setText(frequency.toString())
         }
     }
 
