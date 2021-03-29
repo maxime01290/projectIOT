@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_clock">
+
+    <fragment
+        android:id="@+id/navigation_music"
+        android:name="com.example.projectiot.View.FragmentMusic"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_navigation_music_to_bulb"
+            app:destination="@id/navigation_bulb" />
+        <action
+            android:id="@+id/action_navigation_music_to_clock"
+            app:destination="@id/navigation_clock" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_bulb"
+        android:name="com.example.projectiot.View.FragmentBulb"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_navigation_bulb_to_music"
+            app:destination="@id/navigation_music" />
+        <action
+            android:id="@+id/action_navigation_bulb_to_clock"
+            app:destination="@id/navigation_clock" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_clock"
+        android:name="com.example.projectiot.View.FragmentClock"
+        tools:layout="@layout/fragment_clock" >
+        <action
+            android:id="@+id/action_navigation_clock_to_music"
+            app:destination="@id/navigation_music" />
+        <action
+            android:id="@+id/action_navigation_clock_to_bulb"
+            app:destination="@id/navigation_bulb" />
+    </fragment>
+
+</navigation>

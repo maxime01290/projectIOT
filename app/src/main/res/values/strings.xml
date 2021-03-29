@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProjectIOT</string>
+
+    <!-- BOTTOM NAVIGATION VIEW -->
+    <string name="bottom_navigation_menu_landscape">Bulb</string>
+    <string name="bottom_navigation_menu_logos">Music</string>
+    <string name="bottom_navigation_menu_android">Clock</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

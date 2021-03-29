@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_clock"
+        android:icon="@android:drawable/ic_lock_idle_alarm"
+        android:title="@string/bottom_navigation_menu_android" />
+    <item
+        android:id="@+id/navigation_music"
+        android:icon="@android:drawable/presence_audio_away"
+        android:title="@string/bottom_navigation_menu_logos" />
+    <item
+        android:id="@+id/navigation_bulb"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="@string/bottom_navigation_menu_landscape" />
+</menu>
