@@ -11,5 +11,6 @@ object FirebaseSingleton {
     var g:DatabaseReference = myRef.child("g")
     var b:DatabaseReference = myRef.child("b")
     var nbLed:DatabaseReference = myRef.child("nbLed")
+    var mode:DatabaseReference = myRef.child("mode")
     var tmpClignotement:DatabaseReference = myRef.child("tmpCligotement")
 }

@@ -32,7 +32,10 @@ class FragmentMusic : Fragment() {
         val textViewUpdateFrequency: TextView = view.findViewById(R.id.textView_update_frequencies)
         val cardViewButton: CardView = view.findViewById(R.id.cardView_button_frequencies)
         cardViewButton.setOnClickListener {
-            FirebaseSingleton.tmpClignotement.addValueEventListener(object : ValueEventListener {
+
+            FirebaseSingleton.mode.setValue(2)
+
+/*            FirebaseSingleton.tmpClignotement.addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     // This method is called once with the initial value and again
                     // whenever data at this location is updated.
@@ -45,7 +48,7 @@ class FragmentMusic : Fragment() {
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
                 }
-            })
+            })*/
         }
     }
 
