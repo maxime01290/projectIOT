@@ -48,6 +48,7 @@ class FragmentBulb : Fragment(), AdapterBulb.onItemClickListenerCustom {
                 FirebaseSingleton.r.setValue(adapter.list[i].RGB[0])
                 FirebaseSingleton.g.setValue(adapter.list[i].RGB[1])
                 FirebaseSingleton.b.setValue(adapter.list[i].RGB[2])
+                FirebaseSingleton.mode.setValue(1)
             }else{
                 adapter.list[i].isSelected = false
             }
