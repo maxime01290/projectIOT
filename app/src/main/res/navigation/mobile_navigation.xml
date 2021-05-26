@@ -41,4 +41,16 @@
             app:destination="@id/navigation_bulb" />
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_fullCustomFragment"
+        android:name="com.example.projectiot.View.FullCustomFragment"
+        tools:layout="@layout/fragment_full_custom" >
+        <action
+            android:id="@+id/action_navigation_clock_to_bulb"
+            app:destination="@id/navigation_bulb" />
+        <action
+            android:id="@+id/action_navigation_bulb_to_clock"
+            app:destination="@id/navigation_clock" />
+    </fragment>
+
 </navigation>

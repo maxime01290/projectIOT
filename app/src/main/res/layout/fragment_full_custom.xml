@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/customFragment"
+    tools:context=".View.FullCustomFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvFlash2"
+            android:layout_width="143dp"
+            android:layout_height="29dp"
+            android:text="number of leds  :"
+            app:layout_constraintBottom_toBottomOf="@+id/etNbLeds"
+            app:layout_constraintEnd_toStartOf="@+id/etNbLeds"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etNbLeds" />
+
+        <EditText
+            android:id="@+id/etNbLeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.805"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFlashTime" />
+
+        <com.apandroid.colorwheel.ColorWheel
+            android:id="@+id/colorWheel"
+            android:layout_width="407dp"
+            android:layout_height="278dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etFlashTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.766"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorWheel" />
+
+        <TextView
+            android:id="@+id/tvFlash"
+            android:layout_width="121dp"
+            android:layout_height="25dp"
+            android:text="flash time (in sec) :"
+            app:layout_constraintBottom_toBottomOf="@+id/etFlashTime"
+            app:layout_constraintEnd_toStartOf="@+id/etFlashTime"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etFlashTime"
+            app:layout_constraintVertical_bias="0.55" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<com.apandroid.colorwheel.gradientseekbar.GradientSeekBar
+        android:id="@+id/gradientSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="314dp" />-->
+
+</FrameLayout>

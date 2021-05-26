@@ -68,5 +68,7 @@ class FragmentClock : Fragment() {
         FirebaseSingleton.r.setValue(valueRGB[0])
         FirebaseSingleton.g.setValue(valueRGB[1])
         FirebaseSingleton.b.setValue(valueRGB[2])
+        FirebaseSingleton.mode.setValue(1)
+        FirebaseSingleton.tmpClignotement.setValue(0)
     }
 }
